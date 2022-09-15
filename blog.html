@@ -16,6 +16,32 @@
     </style>
 </head>
 <body>
+    <header>
+        <!-- navbar start  -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-success">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img src="logo.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+                <div class="ms-auto">
+                    <ul class=" navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                          <a class="nav-link fw-bold fs-5 text-white" aria-current="page" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link fw-bold fs-5 text-white" href="#">BLOG</a>
+                        </li>
+                      </ul>
+                </div>
+                
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!-- main start  -->
     <main>
         <section class="container mt-5 p-5" style="background-color: rgb(19, 18, 18);">
             <h4>1. Differences between Local Storage and Session Storage?</h4>
@@ -34,6 +60,16 @@
             <p>Ans: The Event Loop is an infinite loop that keeps waiting for a queue (sometimes referred to as the Callback Queue or Event Queue) to be filled with tasks. As and when the callback queue gets filled up with a task, the Event Loop kicks in and removes the task based on FIFO (First In First Out) from the Callback Queue. It is then pushed on to the Call Stack which executes the task.
             </p>
             <img src="event-loop.png" alt="" width="500px">
+
+            <h4 class="mt-5">4. How many ways we can get undefined from JavaScript? </h4>
+            <p>Ans: There have some ways we can get undefined from javascript, explain below. <br>
+           
+            Value: Undefined (value) is a primitive and is the sole value of the Undefined type. Any property that has not been assigned a value, assumes the undefined value. A function without a return statement, or a function with an empty return statement returns undefined. The value of an unsupplied function argument is undefined.<br><br>
+
+            Variable: Undefined (variable) is a global property whose initial value is undefined (value), Since its a global property we can also access it as a variable. For consistency I’m always going to call it a variable in this article.<br><br>
+
+            Null Distinction: Undefined is distinct from null which is also a primitive value representing the intentional absence of a value. The only similarity between undefined and null is they both coerce to false.
+            </p>
             
         </section>
     </main>
